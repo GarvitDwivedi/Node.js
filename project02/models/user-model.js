@@ -1,5 +1,4 @@
-const mongoose = require(mongoose);
-
+const mongoose = require("mongoose");
 
 const userSchema = mongoose.Schema({
     fullname : String ,
@@ -9,7 +8,6 @@ const userSchema = mongoose.Schema({
         type : Array ,
         default : [] ,
     },
-    isadmin : Boolean ,
     orders : {
         type : Array ,
         default : [] ,

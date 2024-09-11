@@ -14,14 +14,14 @@ if((process.env.NODE_ENV)  === "development"){
          .send("You dont have permission to create a new owner");
       }
 
-      let {fullname , email , password} = req.body();
+      let {fullname , email , password} = req.body;
       let createOwner = await ownerModel.create({
         
          fullname ,
          email ,
          password ,
       })
-      res.status(201).res.send(createOwner);
+      res.status(201).send(createOwner);
    })
 } 
 
